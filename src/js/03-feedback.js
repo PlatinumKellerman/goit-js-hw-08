@@ -12,7 +12,7 @@ form.addEventListener('input', throttle((e) => {
     values.email = e.currentTarget.email.value;
     values.message = e.currentTarget.message.value;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(values));
-}), 3000)
+}, 3000));
 
 
 addEventListener('DOMContentLoaded', onPageLoaded);
